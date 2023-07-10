@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background-color: #333;
+}
+
+video {
+  margin: auto;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin: 8px auto;
+  padding: 4px 16px;
+}

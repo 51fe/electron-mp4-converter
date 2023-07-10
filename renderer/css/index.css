@@ -1,0 +1,77 @@
+body {
+  user-select: none;
+}
+
+ul {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.file {
+  margin-bottom: 8px;
+}
+
+.btn {
+  padding: 4px 16px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info>li {
+  flex: 1;
+  margin-right: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+  margin-top: 12px;
+}
+
+.row .btn ~ .btn {
+  margin-left: 24px;
+}
+
+.row:last-child {
+  text-align: right;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+#selectBtn {
+  cursor: pointer;
+}
+
+#selectBtn .hint {
+  font-size: 16px;
+  font-weight: 500;
+  color: #999;
+  text-align: center;
+}
+
+#selectBtn.normal {
+  transform: scale(0.8);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

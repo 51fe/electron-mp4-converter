@@ -1,0 +1,47 @@
+{
+  "name": "mp4-converter",
+  "version": "1.0.0",
+  "description": "Mp4 Converter",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electronmon .",
+    "build": "electron-builder",
+    "pack": "electron-builder --dir",
+    "lint": "eslint . --ext .js"
+  },
+  "keywords": [],
+  "author": "riafan@hotmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.0",
+    "electron-builder": "^22.0.0",
+    "electronmon": "^2.0.0",
+    "eslint": "^7.26.0",
+    "eslint-plugin-import": "^2.23.0"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^3.0.0",
+    "ffprobe-static": "^3.0.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "toastify-js": "^1.10.0"
+  },
+  "build": {
+    "win": {
+      "icon": "res/icon.png",
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "asar": true,
+    "files": [
+      "!**node_modules/ff*-static/bin/!(win32)",
+      "!**node_modules/ff*-static/bin/win32/ia32"
+    ]
+  }
+}
