@@ -1,0 +1,25 @@
+/**
+ * @see https://www.electron.build/configuration/configuration
+ */
+{
+  asar: true,
+  directories: {
+    output: 'release'
+  },
+  files: [
+    'dist-electron',
+    'dist',
+    "!**node_modules/ff*-static/bin/!(win32)",
+    "!**node_modules/ff*-static/bin/win32/ia32"
+  ],
+  win: {
+    "icon": "res/icon.png",
+    target: [
+      {
+        target: 'portable',
+        arch: ['x64']
+      }
+    ],
+    "artifactName": "${productName}_${version}.${ext}"
+  }
+}
