@@ -2,7 +2,7 @@
 
 > A portable mp4 converter with a Electron + ffmpeg + [Vue 3 + TypeScript + Vite template](https://github.com/electron-vite/electron-vite-vue)
 
-<img src="https://riafan.com/uploads/2106/cover.jpg" alt="cover.jpg">
+<img src="https://51fe.site/uploads/2106/cover.jpg" alt="cover.jpg">
 
 ## Features
 
